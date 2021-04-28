@@ -14,7 +14,7 @@ spec:
   # Source of the application manifests
   source:
     repoURL: https://github.com/auerbecklabs/silly-helm-repo.git
-    targetRevision: master
+    targetRevision: v1.0.0 
     path: charts/silly-helm-repo
 
     # helm specific config
@@ -32,7 +32,7 @@ spec:
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
-    namespace: app1 
+    namespace: app1-int 
 
   # Sync policy
   syncPolicy:
