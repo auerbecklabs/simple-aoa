@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: lead-aoa-integration 
+  name: lead-aoa-production 
   # You'll usually want to add your resources to the argocd namespace.
   namespace: default 
   # Add a this finalizer ONLY if you want these to cascade delete.
@@ -14,7 +14,7 @@ spec:
   # Source of the application manifests
   source:
     repoURL: https://github.com/auerbecklabs/simple-aoa.git
-    targetRevision: integration 
+    targetRevision: production 
     path: apps 
 
   # Sync policy
